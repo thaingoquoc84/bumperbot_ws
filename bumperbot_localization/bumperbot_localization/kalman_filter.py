@@ -36,7 +36,7 @@ class KalmanFilterNode(Node):
         self.variance_ = self.variance_ + self.motion_variance_
         
     def imuCallback(self, imu: Imu):
-        self.imu_angular_z_ = - imu.angular_velocity.z
+        self.imu_angular_z_ = imu.angular_velocity.z
         
     def odomCallback(self, odom):
         self.kalman_odom_ = odom
