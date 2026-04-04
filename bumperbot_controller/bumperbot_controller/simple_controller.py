@@ -100,6 +100,7 @@ class SimpleControllerNode(Node):
         self.odom_msg_.pose.pose.position.y = self.y_
         self.odom_msg_.twist.twist.linear.x = linear
         self.odom_msg_.twist.twist.angular.z = angular
+        self.odom_pub_.publish(self.odom_msg_)
         
         self.transform_stamped_.transform.translation.x = self.x_
         self.transform_stamped_.transform.translation.y = self.y_
@@ -110,7 +111,6 @@ class SimpleControllerNode(Node):
         self.transform_stamped_.header.stamp = self.get_clock().now().to_msg()
         
         self.br_.sendTransform(self.transform_stamped_)
-        self.odom_pub_.publish(self.odom_msg_)
 def main(args=None):
     rclpy.init(args=args)
     node = SimpleControllerNode()
