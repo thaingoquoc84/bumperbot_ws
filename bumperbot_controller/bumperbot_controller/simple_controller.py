@@ -108,7 +108,7 @@ class SimpleControllerNode(Node):
         self.transform_stamped_.transform.rotation.y = q[1]
         self.transform_stamped_.transform.rotation.z = q[2]
         self.transform_stamped_.transform.rotation.w = q[3]
-        self.transform_stamped_.header.stamp = self.get_clock().now().to_msg()
+        self.transform_stamped_.header.stamp = msg.header.stamp
         
         self.br_.sendTransform(self.transform_stamped_)
 def main(args=None):
