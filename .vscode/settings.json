@@ -1,20 +1,14 @@
 {
     "ROS2.distro": "humble",
     "python.autoComplete.extraPaths": [
-        "/home/thaingoquoc/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
-        "/home/thaingoquoc/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages",
-        "/home/thaingoquoc/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages",
-        "/home/thaingoquoc/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/home/thaingoquoc/Tron_fix_gym"
     ],
     "python.analysis.extraPaths": [
-        "/home/thaingoquoc/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
-        "/home/thaingoquoc/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages",
-        "/home/thaingoquoc/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages",
-        "/home/thaingoquoc/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/home/thaingoquoc/Tron_fix_gym"
     ],
     "cmake.sourceDirectory": "/home/thaingoquoc/bumperbot_ws/src/bumperbot_controller"
 }
